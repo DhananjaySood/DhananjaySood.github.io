@@ -1,0 +1,281 @@
+#masthead{
+    background-image:url("../images/workspace.jpeg");
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    height: 748px; 
+
+}
+
+.my-img{
+    width: 120px;
+}
+
+.navbar{
+    color:darkgrey;
+    padding-top: 10px;
+}
+
+.navbar-brand{
+    color:ghostwhite;
+    position: relative;
+}
+
+
+
+.navbar-brand:hover{
+    color: grey;
+}
+
+.navbar-brand:hover:after{
+   width: 100%;
+}
+
+
+.mast-content{
+    color:ghostwhite;
+    margin-top:200px;
+
+}
+
+ul li a {
+  color:darkgrey;
+}
+
+nav.shift ul li a{
+    position: relative;
+    z-index:1;
+}
+
+nav.shift ul li a:hover{
+    color:#91640F;
+}
+
+nav.shift ul li a:after{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    height: 1px;
+    content: ".";
+    color: transparent;
+    background-color: ghostwhite;
+    opacity: 0;
+    z-index:-1;
+}
+
+nav.shift ul li a:hover:after{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+button.navbar-toggler{
+    color: white;
+}
+
+button.navbar-toggler{
+   border: 1px solid #ddd;
+   
+}
+.navbar-toggler-icon {
+    width: 2.5em;
+    height: 1.5em;
+    padding: 3px 0px;
+}
+
+.btn-project{
+    background-color: initial;
+    border-color:initial;
+    color: white; 
+}
+
+
+.hr-line{
+    width: 12%;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.abt-title{
+    margin: 2.0%;
+
+}
+
+#about-sec {
+    padding:2rem 0;
+}
+
+.myname{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 1%;
+}
+
+.abt-para{
+    padding: 4rem 0px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#project-sec{
+    margin: 4.5% 0;
+}
+
+/* .my-img{
+    margin-top: 2%;
+    width: 200px !important;
+    border-radius: 30% 30%;
+} */
+
+  .my-image{
+      text-align:center;
+  }
+
+.my-image img {
+    margin-top:2%;
+    width:200px !important;
+    border-radius:30% 30%;
+}
+
+.my-name {
+    font-size:18px;
+    padding-top: 0.4rem;
+    text-align:center;
+    font-weight:bold;
+}
+
+
+.proj-heading {
+    text-align: center;
+    font-size: 18px;
+}
+
+.view-github {
+    background: transparent;
+    border: 1px solid #000;
+    text-decoration: none; 
+    color:#000;
+    border-radius: 8px;
+    padding: 0.4rem 0.4rem;
+}
+
+.view-github:hover {
+     background-color:purple;
+     color: #fff;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+     text-decoration:none;
+}
+
+.view-website {
+    background: transparent;
+    border: 1px solid #000;
+    color:#000;
+    text-decoration: none;
+    border-radius:8px;
+    padding: 0.4rem 0.4rem;
+}
+
+
+.view-website:hover {
+    background-color:rgb(32, 67, 224);
+    color: #fff;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration:none;
+}
+
+
+#project-sec img {
+    height:10rem;
+    border:1px solid;
+}
+
+#project-sec .col-md-3 {
+    margin-top:2rem;
+}
+
+.busin-1,.busin-2,.non-profit,.school-site {
+    text-align: center;
+}
+
+.ph-number {
+    padding-top: 3rem;
+    padding-left:3.5rem;
+}
+
+.social-links a {
+    margin-left:0.5rem;
+}
+
+svg.svg-inline--fa.fa-github.fa-w-16.fa-2x {
+    color: #6e5494;
+}
+
+svg.svg-inline--fa.fa-instagram.fa-w-14.fa-2x {
+    color:#e1306c;
+}
+
+svg.svg-inline--fa.fa-facebook.fa-w-14.fa-2x {
+    color: #3b5998
+}
+
+svg.svg-inline--fa.fa-twitter.fa-w-16.fa-2x{
+color:#1da1f2;
+}
+
+svg.svg-inline--fa.fa-discord.fa-w-14.fa-2x {
+ color:#7289da;
+}
+
+/*.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    
+}*/
+
+
+/* MEDIA QUERIES  */
+
+@media (max-width:1199px) {
+ .show-proj-btn{
+     display: grid;
+     grid-gap:10px;
+ } 
+}
+
+@media(max-width:992px){
+  .nav-link{
+      text-align: center;
+      color: #fff;
+        
+  }
+}
+
+@media (max-width:768px) {
+  .show-proj-btn {
+      display: inline-block;
+  }
+}
+
+#pg-footer {
+    background-color:lightslategray;
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+#pg-footer p {
+    color:#fff;
+    font-size:16px;
+    font-weight: bold;
+}
+
+
